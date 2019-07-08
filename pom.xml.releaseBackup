@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.coderbd.magic</groupId>
     <artifactId>java-magic</artifactId>
-    <version>1.0.0</version>
-     <build>
+    <version>1.0.0-snapshot</version>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -18,7 +20,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
+                <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
@@ -30,9 +32,8 @@
     </build>
     <packaging>jar</packaging>
 
-    <name>Java Magic for Solving problems to save time</name>
-    <description>This is a sample library for for Solving problems
-	to save time
+    <name>Java Magic Library for solving problems to save time</name>
+    <description>This is a sample java library to save developers time
     </description>
     <url>https://github.com/springapidev/javamagic</url>
 
@@ -51,7 +52,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                        <version>2.2.1</version>
+                        <version>3.1.0</version>
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
@@ -64,7 +65,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.9.1</version>
+                        <version>3.1.0</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
@@ -77,7 +78,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -106,7 +107,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/springapidev/javamagic.git</connection>
-        <developerConnection>scm:git:ssh://github.com:https:springapidev/javamagic.git</developerConnection>
+        <developerConnection>scm:git:ssh://github.com:springapidev/javamagic.git</developerConnection>
         <url>https://github.com/springapidev/javamagic</url>
     </scm>
 
@@ -114,23 +115,20 @@
         <developer>
             <name>Mohammad Rajaul Islam</name>
             <email>rajaul.cse@gmail.com</email>
-            <organization>com.coderbd</organization>
-            <organizationUrl>https://github.com/springapidev/</organizationUrl>
+            <organization>com.github.springapidev</organization>
+            <organizationUrl>https://github.com/springapidev</organizationUrl>
         </developer>
     </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-
 </project>
