@@ -6,7 +6,7 @@
 
     <groupId>com.coderbd.magic</groupId>
     <artifactId>java-magic</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-snapshot</version>
     <build>
         <plugins>
             <plugin>
